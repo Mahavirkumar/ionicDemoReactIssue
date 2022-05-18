@@ -1,0 +1,80 @@
+.dialogBtnContainer1 {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    /* margin-right: 60%; */
+}
+
+.radioGroupcontainer {
+    margin-right: 150px;
+}
+
+.dialogHeader {
+    margin-left: 20px;
+}
+
+.caneclLabel {
+    padding: 1px;
+    position: absolute;
+    left: 100px;
+    margin-bottom: 15px;
+
+    /* margin-left: 80px; */
+}
+
+.okLabel {
+    padding: 1px;
+    position: absolute;
+    right: 23px;
+    margin-bottom: 15px;
+
+    /* margin-right: 5px; */
+}
+
+.labelSpan {
+    margin-left: 15%;
+}
+
+.textOther {
+    font-size: small;
+    color: rgb(143, 141, 141) !important;
+    margin-bottom: -10px;
+}
+
+.othersNumberContainer {
+    --border-color: var(--ion-color-black);
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: -19px;
+}
+
+.numberslabels {
+    margin-left: 5px;
+}
+
+.radiosButtons {
+    margin-right: 0px;
+    margin-left: 2px;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.otherNumberInput {
+    -webkit-user-select: all !important;
+    -moz-user-select: all !important;
+    -ms-user-select: all !important;
+    user-select: all !important;
+    /* overflow-scroll: true; */
+}
+.ionContents{
+    /* overflow-scroll: true; */
+}
+.ionContentDiv{
+    overflow-scroll: true;
+}
+btnPopover{
+    left: 10%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
