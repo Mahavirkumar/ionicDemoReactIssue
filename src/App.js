@@ -1,11 +1,11 @@
 
-import { IonButton, IonContent, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonPopover, IonRadio, IonRadioGroup, IonTextarea, IonToast } from "@ionic/react";
+import { IonButton, IonContent, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonPage, IonPopover, IonRadio, IonRadioGroup, IonTextarea, IonToast } from "@ionic/react";
 import React, { useEffect, useState } from "react";
 import "./callDialogComp.css";
 
 
 
-const App = ({ }) => {
+const App = () => {
   // const [showAlert, setShowAlert] = useState(false);
   const [otherNumber, setOtherNumber] = useState("");
   const [showAlert, setShowAlert] = useState(false);
@@ -47,19 +47,22 @@ const App = ({ }) => {
      setShowAlert(true);
   }
   return (
-    <div>
-      
-        <IonButton  className="btnPopover" onClick={() => openCallDialog()}  slot="end">
-          <IonIcon slot="start" color="white"></IonIcon> Open Popover
+    
+    <div className="bacgroundColor">
+      <div className="buttonDiv">
+        <IonButton  className="btnPopover" onClick={() => openCallDialog()} >
+          <IonIcon  color="white"></IonIcon> Open Popover
         </IonButton>
-       
+        
+        </div> 
+        <IonContent>
         <IonPopover
         showBackdrop={false}
         isOpen={showAlert}
         // animated={true}
         onDidDismiss={() => setShowAlert(false)}
       >
-        <h4 className="dialogHeader">Select C2C Contact</h4>
+        <h4 className="dialogHeader">Select Contact</h4>
 
 
         {<IonItem className="othersNumberContainer">
@@ -102,8 +105,10 @@ const App = ({ }) => {
         </IonItem>
 
       </IonPopover > 
-
+      
+      </IonContent>
     </div >
+  
   );
 }
 
